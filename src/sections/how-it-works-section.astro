@@ -1,0 +1,41 @@
+---
+import MainButton from '@/components/ui/MainButton.tsx';
+import MotionSection from '@/components/ui/MotionSection.tsx';
+import { TriangleAlert } from 'lucide-react';
+---
+
+<MotionSection client:visible>
+  <section class='px-6 py-20'>
+    <div class='flex flex-col items-center justify-center max-w-4xl gap-16 mx-auto text-center'>
+      <h2 class='heading-section'>Como vai funcionar a consultoria então ?</h2>
+
+      <div
+        class='w-full p-4 border rounded-md md:w-1/2 border-muted bg-gradient-to-l from-violet-500 via-violet-700 to-violet-900'
+      >
+        <p class='text-lg leading-relaxed body-text text-zinc-300'>
+          A consultoria acontece em <strong>3 encontros ao vivo</strong> , além disso você recebe <strong>um plano de ação</strong> e tem mais: <strong>
+            30 dias de suporte via WhatsApp</strong> para tirar dúvidas e receber orientações personalizadas.
+          </strong>
+          <br /><br />
+        </p>
+      </div>
+
+      <div class='flex flex-col items-center justify-center w-full gap-6 md:w-1/2'>
+        <TriangleAlert className='w-24 h-24 text-violet-700 shrink-0' aria-hidden='true' />
+
+        <h3 class='text-2xl font-bold text-purple-400'>
+          É a sua oportunidade de ter o meu olhar técnico e estratégico sobre a sua carreira
+        </h3>
+
+        <p class='text-lg leading-relaxed body-text text-zinc-300'>
+          Vou analisar o seu cenário atual, identificar os pontos de melhoria e criar um plano de ação
+          personalizado para você se destacar no mercado de programação.
+        </p>
+
+        <MainButton href='#pillars-section'>
+          <span class='button-text'>Quero destravar minha carreira</span>
+        </MainButton>
+      </div>
+    </div>
+  </section>
+</MotionSection>

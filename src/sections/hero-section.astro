@@ -1,0 +1,63 @@
+---
+import { Image } from 'astro:assets';
+
+import CardHero from '@/components/ui/CardHero';
+import MainButton from '@/components/ui/MainButton';
+import MotionSection from '@/components/ui/MotionSection';
+
+import { Calendar, MonitorPlay, Video, FileCheck, MessageCircle } from 'lucide-react';
+---
+
+<MotionSection client:visible>
+  <section class='px-6 py-20 mt-20 text-white lg:py-32'>
+    <div
+      class='flex flex-col items-center justify-around gap-10 mx-auto max-w-7xl lg:flex-row lg:gap-12'
+    >
+      <div class='max-w-xl'>
+        <h1 class='tracking-tight heading-hero text-neutral-700'>
+          <span class='block text-neutral-500'>Consultoria</span>
+          <span class='block text-white'>Raio-x de carreira</span>
+        </h1>
+
+        <h2 class='mt-6 text-left subheading-hero md:text-justify text-zinc-200'>
+          O plano prático e validado para você sair do comum e alcançar o topo da carreira dev —
+         Destrave sua carreira com o meu plano de ação de alto impacto com a estratégia certa para construir sua autoridade na área
+        </h2>
+
+        <p class='mt-2 text-left body-text md:text-justify'>
+          Você não precisa passar 7, 10 anos esperando que alguém reconheça seu talento. Na consultoria, acessando o meu método validado de aceleração de carreira, eu vou te mostrar o exato caminho que encurtei para me tornar uma referência na área de programação, alcançar os melhores salários,tudo isso sem abrir mão da minha vida pessoal e da minha liberdade geográfica — e como você também pode fazer isso.
+        </p>
+
+        <div class='mt-6'>
+          <MainButton href='#pillars-section'>
+            <span class='button-text'>Quero destravar minha carreira</span>
+          </MainButton>
+        </div>
+
+        <!-- <div class='flex justify-center gap-4 mt-6 md:justify-start'> -->
+        <div class="grid grid-cols-1 gap-6 mt-6 md:grid-cols-3 lg:gap-12">
+          <CardHero text='Plano de ação desenvolvido exclusivamente para você' icon={FileCheck}  />
+          <CardHero text='3 sessões ao vivo comigo' icon={MonitorPlay} />
+          <CardHero text='30 dias de suporte via WhatsApp' icon={MessageCircle} />
+        </div>
+      </div>
+
+      <div class='relative flex items-center justify-center max-w-lg md:w-1/2'>
+        <div class='absolute inset-0 z-0 scale-110 bg-purple-500 rounded-full blur-2xl opacity-20'>
+        </div>
+        <img
+          src='https://avatars.githubusercontent.com/u/32311268?v=4'
+          alt='Imagem da Mentora'
+          class='relative z-10 self-center object-cover rounded-full shadow-xl'
+        />
+        <!-- <Image
+          src='https://avatars.githubusercontent.com/u/32311268?v=4'
+          alt='Imagem da Mentora'
+          class='relative z-10 self-center object-cover rounded-full shadow-xl'
+          width={379}
+          height={379}
+        /> -->
+      </div>
+    </div>
+  </section>
+</MotionSection>

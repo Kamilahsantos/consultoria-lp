@@ -1,0 +1,59 @@
+---
+import { MainButton, MotionSection } from '@/components/ui';
+---
+
+<MotionSection client:visible>
+  <section class='px-6 py-20'>
+    <div class='flex flex-col items-center justify-center max-w-6xl gap-16 mx-auto text-center'>
+      <div class='flex flex-col gap-2'>
+        <h2 class='heading-section'>Quem vai te orientar</h2>
+        <p class='max-w-xl mx-auto body-text text-muted-foreground'>
+          Uma mentora que já trilhou o caminho e pode encurtar o seu.
+        </p>
+      </div>
+
+      <div class='grid items-center grid-cols-1 gap-12 lg:grid-cols-2 text-justify lg:text-left'>
+        <div class='relative flex items-center justify-center w-full max-w-md mx-auto lg:mx-0'>
+          <div class='absolute inset-0 scale-110 bg-purple-500 rounded-full opacity-30 blur-2xl'>
+          </div>
+          <img
+            src='https://avatars.githubusercontent.com/u/32311268?v=4'
+            alt='Kamila Santos'
+            class='relative z-10 object-cover w-full h-full border-4 rounded-full shadow-2xl border-zinc-800'
+            width='379'
+            height='379'
+            loading='lazy'
+          />
+        </div>
+
+        <div class='flex flex-col justify-center gap-6'>
+          <blockquote class='text-sm italic leading-relaxed text-zinc-300 text-center lg:text-left'>
+            "Acredito de verdade que todo dev pode construir uma carreira de impacto, desde que
+            tenha clareza, estratégia e alguém que já percorreu esse caminho ao lado."
+          </blockquote>
+
+          <p class='body-text text-muted-foreground'>
+            Com mais de <strong class='font-semibold text-white'>10 anos de estrada</strong> no desenvolvimento
+            de software, atuei em projetos nacionais e internacionais, ajudando centenas de profissionais
+            a conquistar promoções, viradas de carreira e se posicionar com autoridade. Criadora do método
+            <strong class='font-semibold text-white'>PSH</strong>, mostro como chegar à senioridade
+            em até 5 anos — com estratégia, clareza e foco no que realmente importa.
+          </p>
+
+          <div class='flex flex-col mt-4 gap-1'>
+            <p class='text-lg font-bold text-white'>Kamila Santos</p>
+            <p class='small-text text-muted-foreground'>
+              Mentora de Carreira e Posicionamento para Devs
+            </p>
+          </div>
+
+          <div class='mt-6'>
+            <MainButton href='#pillars-section'>
+              <span class='button-text'>Quero destravar minha carreira</span>
+            </MainButton>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</MotionSection>

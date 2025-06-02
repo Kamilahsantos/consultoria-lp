@@ -1,0 +1,40 @@
+---
+import { MotionSection, TicketCard } from '@/components/ui';
+---
+
+<MotionSection client:visible>
+  <section id='ticket-options' class='px-6 py-20'>
+    <div class='flex flex-col items-center justify-center max-w-6xl gap-16 mx-auto text-center'>
+      <h2 class='heading-section'>Destrave sua carreira agora</h2>
+
+      <!-- <div class='grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
+        <TicketCard
+          title='Ingresso Padrão - Dev decidido'
+          type='Ao vivo'
+          price='R$ 67'
+          link='https://chk.eduzz.com/801EZ48AW7'
+          variant='default'
+          benefits={['Acesso ao vivo à imersão', 'Guia de implementação', 'Grupo exclusivo']}
+        /> -->
+
+        <TicketCard
+          title='3 sessões ao vivo'
+          type='Plano de ação + acompanhamento individual + gravação'
+          price='R$ 3.000'
+          link='https://chk.eduzz.com/7WXQ5XRG9A'
+          variant='vip'
+          badge='Últimas vagas de junho ⭐️'
+          benefits={[
+            '3 encontros ao vivo',
+            'Plano de ação personalizado para os próximos 6 meses da sua carreira',
+            'Análise completa do seu histórico profissional e técnico',
+            'Análise do seu posicionamento no mercado',
+            '30 dias de suporte individual via WhatsApp',
+          ]}
+        />
+      </div>
+    </div>
+  </section>
+</MotionSection>
+
+
